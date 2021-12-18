@@ -1,0 +1,232 @@
+@font-face {
+  font-family: notoSansRegular;
+  src: url(../fonts/NotoSansGeorgian-Regular.ttf);
+}
+@font-face {
+  font-family: notoSansMedium;
+  src: url(../fonts/NotoSansGeorgian-Medium.ttf);
+}
+@font-face {
+  font-family: notoSansBold;
+  src: url(../fonts/NotoSansGeorgian-Bold.ttf);
+}
+@font-face {
+  font-family: notoSansSemiBold;
+  src: url(../fonts/NotoSansGeorgian-SemiBold.ttf);
+}
+@font-face {
+  font-family: mtavruliBold;
+  src: url(../fonts/MYRIADGEOMTAVRULIBOLD.TTF);
+}
+@font-face {
+  font-family: mtavruliMedium;
+  src: url(../fonts/MYRIADGEOMTAVRULIMEDIUM.TTF);
+}
+.test {
+  background: red;
+  font-family: notoSansSemiBold;
+}
+
+.glob {
+  color: blue;
+}
+
+.avatar {
+  width: 80px;
+}
+
+.logo {
+  width: 84px;
+}
+
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-a--center {
+  align-items: center;
+}
+
+.back {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.timer {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  color: #E30000;
+  font-size: 16px;
+  font-family: notoSansMedium;
+}
+
+.new-code {
+  color: #9199B4;
+  font-size: 14px;
+  text-decoration: underline;
+  font-family: notoSansSemiBold;
+}
+.new-code-block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 18px;
+  padding-bottom: 32px;
+}
+
+.container {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.info-text {
+  font-family: mtavruliBold;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  color: #292562;
+}
+
+.confirm {
+  margin-bottom: 30px;
+}
+.confirm-text {
+  color: #292562;
+  font-size: 16px;
+  font-family: notoSansSemiBold;
+}
+.confirm-number {
+  font-size: 16px;
+  font-family: notoSansSemiBold;
+  color: #EE2A7B;
+}
+
+.m-b--md {
+  margin-bottom: 32px;
+}
+
+.full-w {
+  width: 100%;
+}
+
+.color-white {
+  color: white;
+}
+
+.noto-regular {
+  font-family: notoSansRegular;
+}
+
+.button {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  border-radius: 8px;
+}
+.button-disabled {
+  background-color: #9199B4;
+}
+.button-active {
+  background-color: #EE2A7B;
+}
+
+.material {
+  width: 100%;
+  height: 56px;
+  position: relative;
+}
+.material input {
+  font-size: 16px;
+  padding: 18px 12px 7px;
+  display: block;
+  width: calc(100% - 24px);
+  border: none;
+  color: #0E215E;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+}
+.material input:focus {
+  outline: none;
+}
+.material input:focus ~ label, .material input:valid ~ label {
+  top: -12px;
+  font-size: 14px;
+  color: #9199B4;
+  background: #fff;
+  padding: 0px 5px;
+  font-family: notoSansBold;
+}
+.material input:focus ~ .borda {
+  border: 1px solid #292562;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  position: absolute;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  top: 0px;
+  pointer-events: none;
+  -moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  -webkit-transition: all 0.1s ease;
+}
+.material label {
+  color: #0E215E;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: notoSansMedium;
+  position: absolute;
+  pointer-events: none;
+  left: 12px;
+  top: 18px;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+}
+.material .borda {
+  border: 1px solid #DEE0E8;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  pointer-events: none;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+
+.size-16 {
+  font-size: 16px;
+}
+
+.error-input {
+  border: 1px solid #E30000 !important;
+}
+.error-text {
+  color: #E30000;
+  font-size: 12px;
+  position: absolute;
+  bottom: -20px;
+  font-family: notoSansRegular;
+}
+
+/*# sourceMappingURL=style.css.map */

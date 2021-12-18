@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GPI</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <img class="logo" src="../app/img/logo.svg" alt="logo">
+    </div>
+    <div class="flex flex-a--center flex-column container">
+        <div class="full-w back">
+            <a href="./index.html"> <img src="../app/img/back.svg" alt="back"></a>
+        </div>
+        <span class="confirm confirm-text">
+            ერთჯერადი კოდი გამოიგზავნა ნომერზე <span class="confirm-number">*** ** ** 51</span>
+        </span>
+        <form action="" class="full-w">
+            <div class="material">
+                <input type="number" required>
+                <span class="borda"></span>
+                <label>შეიყვანეთ კოდი</label>
+                <span class="timer" id="timer">02:01</span>
+            </div>
+            <div class="new-code-block">
+                <span class="new-code">
+                    ახალი კოდი
+                </span>
+            </div>
+            <button class="button button-disabled" disabled>
+                <span class="color-white noto-regular size-16"> ავტორიზაცია</span>
+            </button>
+        </form>
+
+    </div>
+
+
+</body>
+
+<script>
+    startTimer();
+
+    function startTimer() {
+        var presentTime = document.getElementById('timer').innerHTML;
+        var timeArray = presentTime.split(/[:]+/);
+        var m = timeArray[0];
+        var s = checkSecond((timeArray[1] - 1));
+        if (s == 59) { m = m - 1 }
+        if ((m + '').length == 1) {
+            m = '0' + m;
+        }
+        if (m < 0) {
+            m = '59';
+        }
+        document.getElementById('timer').innerHTML = m + ":" + s;
+        setTimeout(startTimer, 1000);
+    }
+
+    function checkSecond(sec) {
+        if (sec < 10 && sec >= 0) { sec = "0" + sec };
+        if (sec < 0) { sec = "59" };
+        return sec;
+    }
+
+</script>
+
+</html>
