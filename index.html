@@ -36,7 +36,7 @@
                 </span>
             </div>
             <div class="material  m-b--md">
-                <input id="dob" type="text" required>
+                <input id="dob" type="text" required >
                 <span class="borda"></span>
                 <label>დაბადების თარიღი</label>
             </div>
@@ -54,11 +54,11 @@
     $(document).ready(function () {
         // date of birth
         Inputmask({
-            placeholder: "",
+            placeholder: "________",
             mask: "99/99/9999",
-            showMaskOnFocus: false,
+            showMaskOnFocus: true,
             showMaskOnHover: false,
-            jitMasking: true
+            // jitMasking: true
             // autoUnmask: true,
         }).mask("#dob");
     });
